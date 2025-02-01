@@ -6,6 +6,8 @@ import "react-loading-skeleton/dist/skeleton.css";
 import QuantitySelector from "../components/QuantitySelector";
 import { Category, Product } from "../entities";
 
+
+
 function BrowseProducts() {
   const [products, setProducts] = useState<Product[]>([]);
   const [categories, setCategories] = useState<Category[]>([]);
@@ -29,6 +31,7 @@ function BrowseProducts() {
       } finally {
         setProductsLoading(false);
       }
+      
     };
 
     const fetchCategories = async () => {
