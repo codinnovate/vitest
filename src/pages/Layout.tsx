@@ -6,8 +6,9 @@ const Layout = () => {
   return (
     <>
       <NavBar />
-      <main className="prose p-5">
+      <main className="prose  bg-[#EAEAEA] p-5">
         <Outlet />
+
         <Toaster />
       </main>
     </>
